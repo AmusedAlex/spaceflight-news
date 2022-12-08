@@ -47,7 +47,7 @@ function ArticleElement({ id }: SingleArticleProp) {
               variant="primary"
               onClick={() => navigate(`/article/${singleArticleData.id}`)}
             >
-              Show full Article
+              Review full Article
             </Button>
           </Card.Body>
         </Card>

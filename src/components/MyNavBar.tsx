@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const MyNavbar = () => (
   <Navbar bg="dark" variant="dark" expand="lg">
     <Link to={"/"}>
-      <Navbar.Brand>React-Bootstrap</Navbar.Brand>
+      <Navbar.Brand>Spaceflight News</Navbar.Brand>
     </Link>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
