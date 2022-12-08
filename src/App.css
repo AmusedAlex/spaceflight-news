@@ -37,6 +37,12 @@
   }
 }
 
+.jumbotronBgImg {
+  background-image: url("https://images.wallpaperscraft.com/image/single/nebula_galaxy_space_194134_3840x2160.jpg");
+  color: white;
+  object-fit: cover;
+}
+
 .imgArticlePage {
   width: 100%;
 }
@@ -44,5 +50,5 @@
 .divArticlePage {
   height: 94.5vh;
   width: 100%;
-  background-color: lightslategray;
+  background-color: lightgray;
 }

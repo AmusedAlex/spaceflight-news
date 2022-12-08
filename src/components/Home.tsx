@@ -37,7 +37,7 @@ export default function Home() {
           <JumbotronElement />
         </Col>
       </Row>
-      <Row>
+      <Row className="justify-content-center">
         {articleData ? (
           articleData.map((article) => (
             <ArticleElement id={article.id} key={article.id} />

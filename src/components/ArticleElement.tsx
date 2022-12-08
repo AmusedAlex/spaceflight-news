@@ -33,8 +33,8 @@ function ArticleElement({ id }: SingleArticleProp) {
 
   return (
     singleArticleData && (
-      <Col xs={4} className="d-flex justify-content-center">
-        <Card style={{ width: "18rem" }}>
+      <Col xs={4} className="d-flex justify-content-center my-2">
+        <Card style={{ width: "20rem" }}>
           <Card.Img
             variant="top"
             src={singleArticleData.imageUrl}

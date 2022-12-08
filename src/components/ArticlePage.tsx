@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { ArticleInterf } from "../types";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Card } from "react-bootstrap";
 
 const ArticlePage = () => {
   const params = useParams();
@@ -9,6 +9,8 @@ const ArticlePage = () => {
 
   const [singleArticleData, setSingleArticleData] =
     useState<ArticleInterf | null>(null);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchSingleArticle();
@@ -34,11 +36,22 @@ const ArticlePage = () => {
 
   return (
     <div className="divArticlePage">
-      <img
-        src={singleArticleData?.imageUrl}
-        alt={singleArticleData?.imageUrl}
-        className="imgArticlePage"
-      />
+      <Container>
+        <Row>
+          <Col>
+            <Card className="mt-5">
+              <Card.Img variant="top" src={singleArticleData?.imageUrl} />
+              <Card.Body>
+                <Card.Title>{singleArticleData?.title}</Card.Title>
+                <Card.Text>{singleArticleData?.summary}</Card.Text>
+                <Button variant="primary" onClick={() => navigate("/")}>
+                  Back to Home
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

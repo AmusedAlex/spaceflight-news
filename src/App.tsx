@@ -9,7 +9,7 @@ import ArticlePage from "./components/ArticlePage";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="App" style={{ backgroundColor: "lightgrey" }}>
         <MyNavbar />
         <Routes>
           <Route path="/" element={<Home />} />
